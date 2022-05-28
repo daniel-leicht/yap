@@ -248,9 +248,11 @@ $
     When sending the request from a Python client, try using this code:
     ```python
     import requests
+    impot json
+   
     text = 'גנן גידל דגן בגן'
     localhost_yap = "http://localhost:8000/yap/heb/joint"
-    data = '{{"text": "{}  "}}'.format(text).encode('utf-8')  # input string ends with two space characters
+    data = json.dumps({'text': "{}  ".format(text)})  # input string ends with two space characters
     headers = {'content-type': 'application/json'}
     response = requests.get(url=localhost_yap, data=data, headers=headers)
     json_response = response.json()
