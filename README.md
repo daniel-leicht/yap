@@ -156,7 +156,7 @@ The following instructions are for Linux but similarly this can be done on Windo
 - Make sure you have Go and Git installed and on the command PATH.
 - Setup a Go environment:
   - Create a directory (usually per workspace/project) ``mkdir yapproj; cd yapproj``
-  - Set ``$GOPATH`` environment variable to your workspace: ``export GOPATH=path/to/yapproj``
+  - Set ``$GOPATH`` environment variable to your workspace: ``export GOPATH=<full path to yapproj>``
   - In the workspace directory create the src subdirectory: ``mkdir src``
   - cd into the src directory ``cd src``
 - Clone the repository in the src folder of the workspace ``git clone https://github.com/OnlpLab/yap.git``
