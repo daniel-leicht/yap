@@ -245,8 +245,9 @@ $
 
     When sending the request from a Python client, try using this code:
     ```python
+    from pprint import pprint
     import requests
-    impot json
+    import json
    
     text = 'גנן גידל דגן בגן'
     localhost_yap = "http://localhost:8000/yap/heb/joint"
@@ -254,6 +255,7 @@ $
     headers = {'content-type': 'application/json'}
     response = requests.get(url=localhost_yap, data=data, headers=headers)
     json_response = response.json()
+    pprint(json_response)
     ```
 
 ## Joint vs Pipeline
